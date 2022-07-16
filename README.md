@@ -15,6 +15,8 @@ Because your joysticks have a different identifier than mine, you must now use t
 
 Make sure to click the game controller icon on the Gremlin taskbar and that it shows as green. If it is green, it is enabled. If you ever unplug and re-plug in a joystick you will need to switch to Joystick Gremlin and re-enable the profile again. The cool thing is that you can do that without having to restart Star Citizen thanks to vJoy always having a virtual joystick ready to use.
 
+The basic layout is that the Logitech Extreme and the X55/56 joysticks are combined into vJoy Device 1, while the X55/56 throttle is vJoy Device 2. 
+
 ### Star Citizen Layout
 
 Download and copy [X-55-56-LogiExtreme-HOTASAS.xml](https://raw.githubusercontent.com/Chadarius/X-55-56-LogiExtreme-HOTASAS/main/X-55-56-LogiExtreme-HOTASAS.xml) to 
