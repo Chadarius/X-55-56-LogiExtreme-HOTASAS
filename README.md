@@ -7,7 +7,7 @@ Star Citizen Joystick Profile for X-55/X-56 Plus Logitech Extreme for Throttle a
 
 ### Joystick Gremlin
 
-Download the ["joystick gremlin X-55-X-56-LogiExtreme-HOTASAS.xml"](https://raw.githubusercontent.com/Chadarius/X-55-X-56-LogiExtreme-HOTASAS/main/joystick%20gremlin%20X-55-X-56-LogiExtreme-HOTASAS.xml) and load the profile in Joystick Gremlin. 
+Download the ["joystick gremlin X-55-X-56-LogiExtreme-HOTASAS.xml"](https://raw.githubusercontent.com/Chadarius/X-55-56-LogiExtreme-HOTASAS/main/joystick%20gremlin%20X-55-X-56-LogiExtreme-HOTASAS.xml) and load the profile in Joystick Gremlin. 
 
 Adjust your deadzones in Joystick Gremlin as required. Every joystick is a little different!
 
