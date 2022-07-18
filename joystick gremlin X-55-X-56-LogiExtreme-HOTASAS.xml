@@ -1073,14 +1073,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.29200000000000004" y="-0.0040000000000000036"/>
-                                    <control-point x="-0.292" y="-0.004"/>
+                                    <control-point x="-0.388" y="-0.0040000000000000036"/>
+                                    <control-point x="-0.132" y="0.0"/>
                                     <control-point x="0" y="0"/>
-                                    <control-point x="0.292" y="0.004"/>
-                                    <control-point x="0.292" y="0.004"/>
+                                    <control-point x="0.132" y="-0.0"/>
+                                    <control-point x="0.388" y="0.0040000000000000036"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="0.65" low="-0.8"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.5" low="-0.9"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -1092,14 +1092,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.30000000000000004" y="-0.0040000000000000036"/>
-                                    <control-point x="-0.296" y="-0.004"/>
+                                    <control-point x="-0.4119999999999999" y="0.0"/>
+                                    <control-point x="-0.192" y="-0.004"/>
                                     <control-point x="0" y="0"/>
-                                    <control-point x="0.296" y="0.004"/>
-                                    <control-point x="0.3" y="0.004"/>
+                                    <control-point x="0.192" y="0.004"/>
+                                    <control-point x="0.4119999999999999" y="0.0"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.9" low="-0.9"/>
                             </response-curve>
                         </action-set>
                     </container>
