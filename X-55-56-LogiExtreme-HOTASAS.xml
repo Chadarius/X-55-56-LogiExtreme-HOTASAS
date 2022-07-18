@@ -1,5 +1,5 @@
-<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="X55-LogiExtreme-HOTASAS">
- <CustomisationUIHeader label="X55-LogiExtreme-HOTASAS" description="" image="">
+<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="X-55-56-LogiExtreme-HOTASAS">
+ <CustomisationUIHeader label="X-55-56-LogiExtreme-HOTASAS" description="" image="">
   <devices>
    <keyboard instance="1"/>
    <mouse instance="1"/>
@@ -30,9 +30,7 @@
  <options type="joystick" instance="1" Product="vJoy Device  {BEAD1234-0000-0000-0000-504944564944}">
   <fps_move_longitudinal invert="1"/>
  </options>
- <options type="joystick" instance="2" Product="vJoy Device  {BEAD1234-0000-0000-0000-504944564944}">
-  <mgv_move invert="0"/>
- </options>
+ <options type="joystick" instance="2" Product="vJoy Device  {BEAD1234-0000-0000-0000-504944564944}"/>
  <modifiers />
  <actionmap name="seat_general">
   <action name="v_eject">
@@ -76,10 +74,10 @@
  </actionmap>
  <actionmap name="spaceship_view">
   <action name="v_view_cycle_fwd">
-   <rebind input="js1_button26"/>
+   <rebind input="js1_button4"/>
   </action>
   <action name="v_view_pitch">
-   <rebind input="js1_ "/>
+   <rebind input="js1_roty"/>
   </action>
   <action name="v_view_pitch_down">
    <rebind input="js1_hat1_up"/>
@@ -88,7 +86,7 @@
    <rebind input="js1_hat1_down"/>
   </action>
   <action name="v_view_yaw">
-   <rebind input="js1_ "/>
+   <rebind input="js1_rotx"/>
   </action>
   <action name="v_view_yaw_left">
    <rebind input="js1_hat1_left"/>
@@ -108,7 +106,7 @@
    <rebind input="js2_rotx"/>
   </action>
   <action name="v_afterburner">
-   <rebind input="js2_button5"/>
+   <rebind input="js2_button4"/>
   </action>
   <action name="v_atc_request">
    <rebind input="kb1_n" multiTap="2"/>
@@ -139,7 +137,7 @@
    <rebind input="js1_x"/>
   </action>
   <action name="v_space_brake">
-   <rebind input="js2_button4"/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="v_speed_range_abs">
    <rebind input="js2_z"/>
@@ -157,7 +155,7 @@
    <rebind input="js2_x"/>
   </action>
   <action name="v_strafe_lateral">
-   <rebind input="js1_rotx"/>
+   <rebind input="js1_rotz"/>
   </action>
   <action name="v_strafe_left">
    <rebind input="js1_ "/>
@@ -175,7 +173,7 @@
    <rebind input="js1_ "/>
   </action>
   <action name="v_strafe_vertical">
-   <rebind input="js1_roty"/>
+   <rebind input="js1_slider2"/>
   </action>
   <action name="v_target_match_vel">
    <rebind input="js2_ "/>
@@ -304,7 +302,7 @@
  </actionmap>
  <actionmap name="spaceship_weapons">
   <action name="v_attack_group2">
-   <rebind input="js1_button4"/>
+   <rebind input="js1_button5"/>
   </action>
   <action name="v_weapon_cycle_aimmode">
    <rebind input="js2_button9"/>
@@ -411,22 +409,22 @@
  </actionmap>
  <actionmap name="zero_gravity_eva">
   <action name="eva_boost">
-   <rebind input="js2_button5"/>
+   <rebind input="js2_button4"/>
   </action>
   <action name="eva_brake">
-   <rebind input="js2_button35"/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="eva_roll">
    <rebind input="js1_x"/>
   </action>
   <action name="eva_strafe_lateral">
-   <rebind input="js1_rotx"/>
+   <rebind input="js1_rotz"/>
   </action>
   <action name="eva_strafe_longitudinal">
    <rebind input="js2_slider1"/>
   </action>
   <action name="eva_strafe_vertical">
-   <rebind input="js1_roty"/>
+   <rebind input="js1_slider2"/>
   </action>
   <action name="eva_toggle_headlook_mode">
    <rebind input="js2_ "/>
@@ -439,9 +437,6 @@
   </action>
  </actionmap>
  <actionmap name="vehicle_general">
-  <action name="v_attack_group2">
-   <rebind input="js1_button4"/>
-  </action>
   <action name="v_horn">
    <rebind input="js1_ "/>
   </action>
@@ -457,10 +452,10 @@
  </actionmap>
  <actionmap name="vehicle_driver">
   <action name="v_boost">
-   <rebind input="js2_button5"/>
+   <rebind input="js2_button4"/>
   </action>
   <action name="v_brake">
-   <rebind input="js2_button35"/>
+   <rebind input="js2_button5"/>
   </action>
   <action name="v_move">
    <rebind input="js2_slider1"/>
