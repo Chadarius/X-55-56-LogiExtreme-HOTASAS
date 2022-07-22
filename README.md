@@ -1,7 +1,10 @@
 # X-55-56-LogiExtreme-HOTASAS
-Star Citizen Joystick Profile for X-55/X-56 Plus Logitech Extreme for Throttle and Dual Sticks.
+Star Citizen Joystick Profile for X-55/X-56 Plus Logitech Extreme for Throttle and Dual Sticks. It works best with the X-56 because you can get true 6 degrees of movement with just the right stick and throttle. I use the left stick when I dogfight. This is because I have 6 degrees of movement with dual sticks and can still control power to weapons, shields, and engines with my thumb. That just isn't possible with the throttle in my left hand. 
+
+That being said, you can always add in Voice Attack to control power, and use just the HOTAS I suppose. I think HOSAS is still the best for dogfighting. 
 
 ## Beta Version - Still in progress!
+I'm not really finished with the whole thing, but I'm using it as my daily driver at this point. 
 
 ## Quick Reference
 
@@ -15,7 +18,7 @@ Because your joysticks have a different identifier than mine, you must now use t
 
 Make sure to click the game controller icon on the Gremlin taskbar and that it shows as green. If it is green, it is enabled. If you ever unplug and re-plug in a joystick you will need to switch to Joystick Gremlin and re-enable the profile again. The cool thing is that you can do that without having to restart Star Citizen thanks to vJoy always having a virtual joystick ready to use.
 
-The basic layout is that the Logitech Extreme and the X55/56 joysticks are combined into vJoy Device 1, while the X55/56 throttle is vJoy Device 2. 
+The basic layout is that the X55/56 joysticks are vJoy Device 1, while the X55/56 throttle is vJoy Device 2. The Logitech Extreme left-hand stick is combine into both vJoy Device 1 and vJoy Device 2. This is primarily to keep things simple for Star Citizen and the fact that the Extreme stick shares axis and buttons with both the throttle and the right stick. 
 
 ### Star Citizen Layout
 
@@ -25,3 +28,6 @@ Download and copy [X-55-56-LogiExtreme-HOTASAS.xml](https://raw.githubuserconten
 In Star Citizen, open the console and cut and paste the following command:
 
 pp_rebindkeys X-55-56-LogiExtreme-HOTASAS
+
+### Joystick Layout
+Here is a PDF of the [X-55-56-LogiExtreme-HOTASAS](https://raw.githubusercontent.com/Chadarius/X-55-56-LogiExtreme-HOTASAS/main/X-55-56-LogiExtreme-HOTASAS.pdf). I designed it with LibreOffice Draw. The original file is available in the repo as X-55-56-LogiExtreme-HOTASAS.odg. 
