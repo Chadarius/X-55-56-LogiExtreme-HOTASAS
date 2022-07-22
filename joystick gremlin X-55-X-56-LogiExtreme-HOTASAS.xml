@@ -504,7 +504,7 @@
                 <axis description="" id="1">
                     <container type="basic">
                         <action-set>
-                            <remap axis="6" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="4" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
@@ -523,7 +523,7 @@
                 <axis description="" id="2">
                     <container type="basic">
                         <action-set>
-                            <remap axis="8" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="5" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
@@ -546,14 +546,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.508" y="-0.0040000000000000036"/>
-                                    <control-point x="-0.328" y="-0.012"/>
-                                    <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.328" y="0.012"/>
-                                    <control-point x="0.508" y="0.004"/>
+                                    <control-point x="-0.492" y="-0.0040000000000000036"/>
+                                    <control-point x="-0.492" y="-0.004"/>
+                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.492" y="0.004"/>
+                                    <control-point x="0.492" y="0.004"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.1" center-low="-0.1" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.05" center-low="-0.05" high="1.0" low="-1.0"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -710,13 +710,13 @@
                 <axis description="" id="4">
                     <container type="basic">
                         <action-set>
-                            <remap axis="6" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="4" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="-0.496" y="0.0"/>
                                     <control-point x="-0.22" y="-0.0"/>
-                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.22" y="0.0"/>
                                     <control-point x="0.496" y="-0.0"/>
                                     <control-point x="1.0" y="1.0"/>
@@ -729,13 +729,13 @@
                 <axis description="" id="5">
                     <container type="basic">
                         <action-set>
-                            <remap axis="8" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="5" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="-0.496" y="0.0"/>
                                     <control-point x="-0.244" y="-0.004"/>
-                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.244" y="0.004"/>
                                     <control-point x="0.496" y="0.0"/>
                                     <control-point x="1.0" y="1.0"/>
@@ -754,7 +754,7 @@
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="-0.836" y="-0.792"/>
                                     <control-point x="-0.252" y="0.0"/>
-                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.252" y="-0.0"/>
                                     <control-point x="0.836" y="0.792"/>
                                     <control-point x="1.0" y="1.0"/>
@@ -774,7 +774,7 @@
                 <axis description="" id="8">
                     <container type="basic">
                         <action-set>
-                            <remap axis="8" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
+                            <remap axis="8" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
                         </action-set>
                     </container>
                 </axis>
@@ -1075,7 +1075,7 @@
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="-0.388" y="-0.0040000000000000036"/>
                                     <control-point x="-0.132" y="0.0"/>
-                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.132" y="-0.0"/>
                                     <control-point x="0.388" y="0.0040000000000000036"/>
                                     <control-point x="1.0" y="1.0"/>
@@ -1094,7 +1094,7 @@
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="-0.4119999999999999" y="0.0"/>
                                     <control-point x="-0.192" y="-0.004"/>
-                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.192" y="0.004"/>
                                     <control-point x="0.4119999999999999" y="0.0"/>
                                     <control-point x="1.0" y="1.0"/>
@@ -1325,7 +1325,7 @@
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-0.7"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-0.85"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -1338,7 +1338,7 @@
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="0.7" low="-0.85"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-0.85"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -1413,14 +1413,10 @@
                 <button description="" id="62"/>
                 <button description="" id="63"/>
                 <button description="" id="64"/>
+                <hat description="" id="1"/>
             </mode>
         </vjoy-device>
     </vjoy-devices>
-    <merge-axis mode="Default" operation="average">
-        <vjoy axis-id="1" vjoy-id="1"/>
-        <lower axis-id="1" device-guid="{3DF4E1B0-6894-11EC-8001-444553540000}"/>
-        <upper axis-id="1" device-guid="{3DF4E1B0-6894-11EC-8001-444553540000}"/>
-    </merge-axis>
     <settings>
         <default-delay>0.05</default-delay>
     </settings>
