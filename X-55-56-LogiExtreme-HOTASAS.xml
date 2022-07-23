@@ -105,7 +105,7 @@
  </actionmap>
  <actionmap name="spaceship_movement">
   <action name="v_accel_range_abs">
-   <rebind input="js2_rotx"/>
+   <rebind input="js2_rotz"/>
   </action>
   <action name="v_afterburner">
    <rebind input="js2_button4"/>
@@ -157,13 +157,13 @@
    <rebind input="js2_x"/>
   </action>
   <action name="v_strafe_lateral">
-   <rebind input="js1_rotz"/>
+   <rebind input="js2_rotx"/>
   </action>
   <action name="v_strafe_left">
    <rebind input="js1_ "/>
   </action>
   <action name="v_strafe_longitudinal">
-   <rebind input="js2_slider1"/>
+   <rebind input="js1_slider1"/>
   </action>
   <action name="v_strafe_longitudinal_invert">
    <rebind input="js2_ "/>
@@ -175,7 +175,7 @@
    <rebind input="js1_ "/>
   </action>
   <action name="v_strafe_vertical">
-   <rebind input="js1_slider2"/>
+   <rebind input="js2_roty"/>
   </action>
   <action name="v_target_match_vel">
    <rebind input="js2_ "/>
@@ -379,8 +379,11 @@
   <action name="gp_crouch">
    <rebind input="js2_ "/>
   </action>
+  <action name="gp_movex">
+   <rebind input="js2_roty"/>
+  </action>
   <action name="gp_movey">
-   <rebind input="js2_ "/>
+   <rebind input="js2_rotx"/>
   </action>
   <action name="jump">
    <rebind input="js2_ "/>
@@ -420,13 +423,13 @@
    <rebind input="js1_x"/>
   </action>
   <action name="eva_strafe_lateral">
-   <rebind input="js1_rotz"/>
+   <rebind input="js2_rotx"/>
   </action>
   <action name="eva_strafe_longitudinal">
-   <rebind input="js2_slider1"/>
+   <rebind input="js1_slider1"/>
   </action>
   <action name="eva_strafe_vertical">
-   <rebind input="js1_slider2"/>
+   <rebind input="js2_roty"/>
   </action>
   <action name="eva_toggle_headlook_mode">
    <rebind input="js2_ "/>
@@ -458,9 +461,6 @@
   </action>
   <action name="v_brake">
    <rebind input="js2_button5"/>
-  </action>
-  <action name="v_move">
-   <rebind input="js2_slider1"/>
   </action>
   <action name="v_move_back">
    <rebind input="js2_y"/>
