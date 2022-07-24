@@ -542,13 +542,13 @@
                 <axis description="" id="6">
                     <container type="basic">
                         <action-set>
-                            <remap axis="7" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
+                            <remap axis="7" axis-scaling="1.0" axis-type="absolute" vjoy="1"/>
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="-0.492" y="-0.0040000000000000036"/>
                                     <control-point x="-0.492" y="-0.004"/>
-                                    <control-point x="0" y="0"/>
+                                    <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.492" y="0.004"/>
                                     <control-point x="0.492" y="0.004"/>
                                     <control-point x="1.0" y="1.0"/>
@@ -582,7 +582,7 @@
                 <button description="" id="3">
                     <container type="basic">
                         <action-set>
-                            <remap button="4" vjoy="2"/>
+                            <remap button="5" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
@@ -596,7 +596,7 @@
                 <button description="" id="5">
                     <container type="basic">
                         <action-set>
-                            <remap button="6" vjoy="2"/>
+                            <remap button="4" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
@@ -655,7 +655,7 @@
                             <remap button="24" vjoy="2"/>
                         </action-set>
                         <action-set>
-                            <remap button="1" vjoy="1"/>
+                            <remap button="25" vjoy="2"/>
                         </action-set>
                         <action-set>
                             <remap button="26" vjoy="2"/>
@@ -809,7 +809,7 @@
                 <button description="" id="5">
                     <container type="basic">
                         <action-set>
-                            <remap button="4" vjoy="2"/>
+                            <remap button="5" vjoy="2"/>
                         </action-set>
                     </container>
                 </button>
