@@ -553,7 +553,7 @@
                                     <control-point x="0.492" y="0.004"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.05" center-low="-0.05" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.1" center-low="-0.1" high="1.0" low="-1.0"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -668,7 +668,53 @@
             </mode>
         </device>
         <device device-guid="{6F1D2B61-D5A0-11CF-BFC7-444553540000}" label="" name="keyboard" type="keyboard">
-            <mode name="Default"/>
+            <mode name="Default">
+                <key description="Throttle to Zero" extended="False" id="11">
+                    <container type="basic">
+                        <action-set>
+                            <macro>
+                                <properties/>
+                                <actions>
+                                    <vjoy axis-type="absolute" input-id="3" input-type="axis" value="-0.9999999999999999" vjoy-id="2"/>
+                                </actions>
+                            </macro>
+                        </action-set>
+                        <activation-condition rule="all">
+                            <condition comparison="pressed" condition-type="keyboard" extended="True" input="keyboard" scan-code="29"/>
+                        </activation-condition>
+                    </container>
+                </key>
+                <key description="Decrease Throttle 5%" extended="False" id="12">
+                    <container type="basic">
+                        <action-set>
+                            <macro>
+                                <properties/>
+                                <actions>
+                                    <vjoy axis-type="relative" input-id="3" input-type="axis" value="-0.1" vjoy-id="2"/>
+                                </actions>
+                            </macro>
+                        </action-set>
+                        <activation-condition rule="all">
+                            <condition comparison="pressed" condition-type="keyboard" extended="True" input="keyboard" scan-code="29"/>
+                        </activation-condition>
+                    </container>
+                </key>
+                <key description="Increase Throttle 5%" extended="False" id="13">
+                    <container type="basic">
+                        <action-set>
+                            <macro>
+                                <properties/>
+                                <actions>
+                                    <vjoy axis-type="relative" input-id="3" input-type="axis" value="0.1" vjoy-id="2"/>
+                                </actions>
+                            </macro>
+                        </action-set>
+                        <activation-condition rule="all">
+                            <condition comparison="pressed" condition-type="keyboard" extended="True" input="keyboard" scan-code="29"/>
+                        </activation-condition>
+                    </container>
+                </key>
+            </mode>
         </device>
         <device device-guid="{A6113510-05D2-11ED-8001-444553540000}" label="X-56 Throttle" name="Saitek Pro Flight X-56 Rhino Throttle" type="joystick">
             <mode name="Default">
@@ -686,7 +732,7 @@
                                     <control-point x="0.64" y="0.512"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.1" center-low="-0.1" high="0.99" low="-0.99"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -700,9 +746,8 @@
                                 <mapping type="cubic-spline">
                                     <control-point x="-1.0" y="-1.0"/>
                                     <control-point x="1.0" y="1.0"/>
-                                    <control-point x="0.0" y="-0.004"/>
                                 </mapping>
-                                <deadzone center-high="0.05" center-low="-0.05" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.99" low="-0.99"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -714,14 +759,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.496" y="0.0"/>
-                                    <control-point x="-0.22" y="-0.0"/>
+                                    <control-point x="-0.508" y="-1.0"/>
+                                    <control-point x="-0.492" y="0.004"/>
                                     <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.22" y="0.0"/>
-                                    <control-point x="0.496" y="-0.0"/>
+                                    <control-point x="0.492" y="-0.004"/>
+                                    <control-point x="0.508" y="1.0"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.05" center-low="-0.05" high="0.99" low="-0.99"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -733,11 +778,11 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.496" y="0.0"/>
-                                    <control-point x="-0.244" y="-0.004"/>
+                                    <control-point x="-0.508" y="-0.996"/>
+                                    <control-point x="-0.5" y="0.0"/>
                                     <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.244" y="0.004"/>
-                                    <control-point x="0.496" y="0.0"/>
+                                    <control-point x="0.5" y="-0.0"/>
+                                    <control-point x="0.508" y="0.996"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
                                 <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
@@ -750,16 +795,11 @@
                         <action-set>
                             <remap axis="6" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
                             <response-curve>
-                                <mapping type="cubic-bezier-spline">
+                                <mapping type="cubic-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.836" y="-0.792"/>
-                                    <control-point x="-0.252" y="0.0"/>
-                                    <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.252" y="-0.0"/>
-                                    <control-point x="0.836" y="0.792"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.99" low="-0.99"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -768,6 +808,13 @@
                     <container type="basic">
                         <action-set>
                             <remap axis="7" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
+                            <response-curve>
+                                <mapping type="cubic-spline">
+                                    <control-point x="-1.0" y="-1.0"/>
+                                    <control-point x="1.0" y="1.0"/>
+                                </mapping>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.99" low="-0.99"/>
+                            </response-curve>
                         </action-set>
                     </container>
                 </axis>
@@ -775,6 +822,13 @@
                     <container type="basic">
                         <action-set>
                             <remap axis="8" axis-scaling="1.0" axis-type="absolute" vjoy="2"/>
+                            <response-curve>
+                                <mapping type="cubic-spline">
+                                    <control-point x="-1.0" y="-1.0"/>
+                                    <control-point x="1.0" y="1.0"/>
+                                </mapping>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.99" low="-0.99"/>
+                            </response-curve>
                         </action-set>
                     </container>
                 </axis>
@@ -1002,7 +1056,7 @@
                         </action-set>
                     </container>
                 </button>
-                <button description="" id="33">
+                <button description="VoiceAttack Ping Forward" id="33">
                     <container type="basic">
                         <action-set>
                             <remap button="33" vjoy="2"/>
@@ -1023,7 +1077,13 @@
                         </action-set>
                     </container>
                 </button>
-                <button description="" id="36"/>
+                <button description="" id="36">
+                    <container type="basic">
+                        <action-set>
+                            <remap button="36" vjoy="2"/>
+                        </action-set>
+                    </container>
+                </button>
             </mode>
         </device>
         <device device-guid="{FC266880-05D2-11ED-8003-444553540000}" label="X-56 Stick" name="Saitek Pro Flight X-56 Rhino Stick" type="joystick">
@@ -1035,11 +1095,11 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.668" y="-0.512"/>
+                                    <control-point x="-0.596" y="-0.5"/>
                                     <control-point x="-0.24" y="-0.004"/>
                                     <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.24" y="0.004"/>
-                                    <control-point x="0.668" y="0.512"/>
+                                    <control-point x="0.596" y="0.5"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
                                 <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
@@ -1054,11 +1114,11 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.72" y="-0.528"/>
+                                    <control-point x="-0.62" y="-0.512"/>
                                     <control-point x="-0.256" y="0.0"/>
                                     <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.256" y="-0.0"/>
-                                    <control-point x="0.72" y="0.528"/>
+                                    <control-point x="0.62" y="0.512"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
                                 <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
@@ -1073,14 +1133,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.388" y="-0.0040000000000000036"/>
-                                    <control-point x="-0.132" y="0.0"/>
+                                    <control-point x="-0.508" y="-1.0"/>
+                                    <control-point x="-0.5" y="0.0"/>
                                     <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.132" y="-0.0"/>
-                                    <control-point x="0.388" y="0.0040000000000000036"/>
+                                    <control-point x="0.5" y="-0.0"/>
+                                    <control-point x="0.5" y="1.0"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="0.5" low="-0.9"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="0.75" low="-1.0"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -1092,14 +1152,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.4119999999999999" y="0.0"/>
-                                    <control-point x="-0.192" y="-0.004"/>
+                                    <control-point x="-0.484" y="-1.0"/>
+                                    <control-point x="-0.5" y="0.004"/>
                                     <control-point x="0.0" y="0.0"/>
-                                    <control-point x="0.192" y="0.004"/>
-                                    <control-point x="0.4119999999999999" y="0.0"/>
+                                    <control-point x="0.5" y="-0.004"/>
+                                    <control-point x="0.484" y="1.0"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="0.9" low="-0.9"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -1111,14 +1171,14 @@
                             <response-curve>
                                 <mapping type="cubic-bezier-spline">
                                     <control-point x="-1.0" y="-1.0"/>
-                                    <control-point x="-0.692" y="-0.504"/>
+                                    <control-point x="-0.636" y="-0.5"/>
                                     <control-point x="-0.308" y="-0.004"/>
                                     <control-point x="0.0" y="0.0"/>
                                     <control-point x="0.308" y="0.004"/>
-                                    <control-point x="0.692" y="0.504"/>
+                                    <control-point x="0.636" y="0.5"/>
                                     <control-point x="1.0" y="1.0"/>
                                 </mapping>
-                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-1.0"/>
+                                <deadzone center-high="0.0" center-low="0.0" high="1.0" low="-0.8"/>
                             </response-curve>
                         </action-set>
                     </container>
@@ -1420,5 +1480,7 @@
     <settings>
         <default-delay>0.05</default-delay>
     </settings>
-    <plugins/>
+    <plugins>
+        <plugin file-name="D:/Users/chada/nextcloud/Documents/star citizen/ASMBL/joystick gremlin/average_filter.py"/>
+    </plugins>
 </profile>
