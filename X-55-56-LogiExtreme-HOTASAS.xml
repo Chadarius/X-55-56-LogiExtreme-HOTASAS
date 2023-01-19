@@ -1,5 +1,5 @@
-<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="x-55-56-logi-20220818">
- <CustomisationUIHeader label="x-55-56-logi-20220818" description="" image="">
+<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="x-55-x56-logi-20230119">
+ <CustomisationUIHeader label="x-55-x56-logi-20230119" description="" image="">
   <devices>
    <keyboard instance="1"/>
    <mouse instance="1"/>
@@ -112,7 +112,7 @@
    <rebind input="js2_button4"/>
   </action>
   <action name="v_atc_request">
-   <rebind input="kb1_n" multiTap="2"/>
+   <rebind input="kb1_ralt+n"/>
    <rebind input="js2_button2"/>
   </action>
   <action name="v_autoland">
@@ -470,7 +470,7 @@
    <rebind input="js2_button5"/>
   </action>
   <action name="v_move">
-   <rebind input="js2_slider1"/>
+   <rebind input="js2_ "/>
   </action>
   <action name="v_move_back">
    <rebind input="js2_y"/>
